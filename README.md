@@ -19,4 +19,4 @@
 - [Ngô Huy Anh - K19 FIT HCMUS](https://github.com/tristanhuyanhngo)
 - [Phùng Anh Khoa - K19 FIT HCMUS]
 - [Đoàn Nguyễn Hương Lan - K19 FIT HCMUS]
-- [Nguyễn Huy Ạnh Thư - K19 FIT HCMUS]
+- [Nguyễn Huy Anh Thư - K19 FIT HCMUS]

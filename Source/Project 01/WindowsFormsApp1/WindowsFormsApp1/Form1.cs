@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
         SqlCommand command;
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table_DSHoaDon = new DataTable();
-        string str = @"Data Source=DESKTOP-SFNTJJK\SQLEXPRESS;Initial Catalog=DATH1;Integrated Security=True";
+        string str = @"Data Source=DESKTOP-SFNTJJK\SQLEXPRESS;Initial Catalog=ADB1_6_DATH1;Integrated Security=True";
 
         void LoadData()
         {

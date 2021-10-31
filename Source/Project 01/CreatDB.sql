@@ -1,7 +1,7 @@
-﻿create database DATH1
+﻿create database ADB1_6_DATH1
 go 
 
-use DATH1
+use ADB1_6_DATH1
 go
 create table KhachHang
 (
@@ -22,7 +22,7 @@ create table HoaDon
 (
 	MaHD varchar(15) NOT NULL,
 	MaKH varchar(15) NOT NULL,
-	NgayLap date,
+	NgayLap date NOT NULL,
 	TongTien int,
 	primary key (MaHD)
 )

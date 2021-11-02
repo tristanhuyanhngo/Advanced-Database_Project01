@@ -17,12 +17,12 @@ namespace WindowsFormsApp1
         SqlCommand command;
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table_DSHoaDon = new DataTable();
-        string str = @"Data Source=DESKTOP-SFNTJJK\SQLEXPRESS;Initial Catalog=QLDT;Integrated Security=True";
+        string str = @"Data Source=DESKTOP-SFNTJJK\SQLEXPRESS;Initial Catalog=ADB1_6_DATH1;Integrated Security=True";
 
         void LoadData()
         {
             command = connection.CreateCommand();
-            command.CommandText = "SELECT * FROM GIAOVIEN";
+            command.CommandText = "SELECT * FROM HOADON";
             adapter.SelectCommand = command;
             table_DSHoaDon.Clear();
             adapter.Fill(table_DSHoaDon);

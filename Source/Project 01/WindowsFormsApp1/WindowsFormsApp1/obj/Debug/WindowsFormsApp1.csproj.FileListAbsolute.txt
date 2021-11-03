@@ -18,3 +18,13 @@ D:\QST\Studying\3_Year\CSDL_NC\Advanced-Database_Project01\Source\Project 01\Win
 D:\QST\Studying\3_Year\CSDL_NC\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 D:\QST\Studying\3_Year\CSDL_NC\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\QST\Studying\3_Year\CSDL_NC\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\HCMUS\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\HCMUS\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\HCMUS\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\HCMUS\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+E:\HCMUS\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\HCMUS\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\HCMUS\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\HCMUS\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\HCMUS\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\HCMUS\Advanced-Database_Project01\Source\Project 01\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

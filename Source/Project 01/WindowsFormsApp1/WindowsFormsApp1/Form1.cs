@@ -17,7 +17,8 @@ namespace WindowsFormsApp1
         SqlCommand command;
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table_DSHoaDon = new DataTable();
-        string str = @"Data Source=DESKTOP-SFNTJJK\SQLEXPRESS;Initial Catalog=ADB1_6_DATH1;Integrated Security=True";
+        DataTable table_DoanhThuTheoThang = new DataTable();
+        string str = @"Data Source=DESKTOP-3218CJS;Initial Catalog=ADB1_6_DATH1;Integrated Security=True";
 
         void LoadData()
         {
@@ -27,6 +28,16 @@ namespace WindowsFormsApp1
             table_DSHoaDon.Clear();
             adapter.Fill(table_DSHoaDon);
             DGV_DanhSachHoaDon.DataSource = table_DSHoaDon;
+
+            // Doanh Thu theo thang
+            /*
+            command = connection.CreateCommand();
+            command.CommandText = "";
+            adapter.SelectCommand = command;
+            table_DoanhThuTheoThang.Clear();
+            adapter.Fill(table_DoanhThuTheoThang);
+            DGV_DoanhThuTheoThang.DataSource = table_DoanhThuTheoThang;
+             */
         }
         public Form1()
         {
@@ -53,6 +64,23 @@ namespace WindowsFormsApp1
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void DGV_DanhSachHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = DGV_DanhSachHoaDon.CurrentRow.Index;
+            Input_MaHoaDon.Text = DGV_DanhSachHoaDon.Rows[index].Cells[0].Value.ToString();
+            Input_MaKhachHang.Text = DGV_DanhSachHoaDon.Rows[index].Cells[1].Value.ToString();
+            Input_NgayLap.Text = DGV_DanhSachHoaDon.Rows[index].Cells[2].Value.ToString();
+            Input_TongTien.Text = DGV_DanhSachHoaDon.Rows[index].Cells[3].Value.ToString();
+        }
+
+        private void button_ThemMoiHoaDon_MouseClick(object sender, MouseEventArgs e)
+        {
+            command.Connection.CreateCommand();
+            command.CommandText = "INSERT INTO HoaDon VALUES ('"+Input_MaHoaDon.Text+"','"+Input_MaKhachHang.Text+"','"+Input_NgayLap.Text+ "','" + Input_TongTien.Text + "')";
+            command.ExecuteNonQuery();
+            LoadData();
         }
     }
 }

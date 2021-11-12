@@ -1,4 +1,7 @@
-﻿ ----Cho danh sach cac hoa don lap trong nam 2020
+﻿USE ADB1_6_DATH1
+GO
+
+ ----Cho danh sach cac hoa don lap trong nam 2020
 SELECT * FROM dbo.HoaDon HD 
 WHERE YEAR(HD.NgayLap) = 2020
 
@@ -22,10 +25,12 @@ GROUP BY  ct.MaSP, sp.TenSP
 ORDER BY SUM(ct.SoLuong) DESC 
 
 ----Cho danh sach cac san pham co doanh thu cao nhat
-SELECT SP.MaSP, SP.TenSP, SUM(CTHD.ThanhTien) AS DoanhThu
-FROM SanPham SP JOIN CT_HoaDon CTHD ON SP.MaSP = CTHD.MaSP
-GROUP BY SP.MaSP, SP.TenSP
-ORDER BY SUM(CTHD.ThanhTien) DESC 
+SELECT SP.*, DoanhThu = (CT.SoLuong*CT.GiaBan)
+FROM SanPham AS SP, CT_HoaDon AS CT
+WHERE SP.MaSP = CT.MaSP AND (CT.SoLuong*CT.GiaBan) = (
+	SELECT MAX(ct.SoLuong*ct.GiaBan) FROM CT_HoaDon AS ct
+)
+
 
 
 --a. Select * from A join B join C on.... Và Select * from A,B,C where A.x = B.x....

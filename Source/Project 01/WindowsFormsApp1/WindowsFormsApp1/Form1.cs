@@ -30,14 +30,12 @@ namespace WindowsFormsApp1
             DGV_DanhSachHoaDon.DataSource = table_DSHoaDon;
 
             // Doanh Thu theo thang
-            /*
             command = connection.CreateCommand();
-            command.CommandText = "";
+            command.CommandText = "SELECT Month(HD1.NgayLap) as Thang, SUM(HD1.TongTien) as TongDoanhThu FROM HoaDon AS HD1 group by Month(HD1.NgayLap) order by Month(HD1.NgayLap)";
             adapter.SelectCommand = command;
             table_DoanhThuTheoThang.Clear();
             adapter.Fill(table_DoanhThuTheoThang);
             DGV_DoanhThuTheoThang.DataSource = table_DoanhThuTheoThang;
-             */
         }
         public Form1()
         {

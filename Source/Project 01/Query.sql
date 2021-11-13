@@ -12,7 +12,7 @@ WHERE KH.Tpho = N'Hồ Chí Minh'
 
 ----Cho danh sach cac san pham co gia trong mot khoang tu...den...
 SELECT * FROM SanPham SP 
-WHERE SP.Gia BETWEEN 10000 AND 100000
+WHERE SP.Gia BETWEEN 100 AND 1000
 
 ----Cho danh sach cac san pham co so luong ton <100
 SELECT * FROM SanPham SP 

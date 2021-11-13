@@ -79,8 +79,11 @@ CREATE trigger tg_ThanhTien
 on dbo.CT_HoaDon for INSERT,DELETE,UPDATE
 as
 BEGIN
+	update  dbo.CT_HoaDon set dbo.CT_HoaDon.GiaBan = dbo.SanPham.gia from inserted,dbo.SanPham
+	where Inserted.MaSP = dbo.SanPham.MaSP and  dbo.CT_HoaDon.MaHD = inserted.MaHD   AND Inserted.MaSP = dbo.CT_HoaDon.MaSP
+
 	declare @thanhtien int
-	SELECT @thanhtien =  (Inserted.GiaBan - Inserted.GiaGiam)*inserted.SoLuong 
+	SELECT @thanhtien =  (dbo.CT_HoaDon.GiaBan - dbo.CT_HoaDon.GiaGiam)*dbo.CT_HoaDon.SoLuong 
 	FROM  dbo.CT_HoaDon,Inserted 
 	where Inserted.MaHD = dbo.CT_HoaDon.MaHD AND Inserted.MaSP = dbo.CT_HoaDon.MaSP
 	update dbo.CT_HoaDon set ThanhTien = @thanhtien from inserted,dbo.CT_HoaDon where dbo.CT_HoaDon.MaHD = inserted.MaHD   AND Inserted.MaSP = dbo.CT_HoaDon.MaSP
@@ -95,3 +98,5 @@ BEGIN
 	update dbo.HoaDon set TongTien = dbo.fn_tinhtong(Inserted.MaHD) FROM dbo.HoaDon,Inserted WHERE dbo.HoaDon.MaHD = Inserted.MaHD
 END
 go
+
+

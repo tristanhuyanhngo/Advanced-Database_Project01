@@ -1,7 +1,7 @@
 # Advanced Database Project#01
 
 - Ôn tập cơ sở dữ liệu: SQL Generator, Trigger, Stored Procedure, SQL Retrive Data, C# Winform và Creating Index
-- Nội dung mô tả đồ án chi tiết được viết trong file `Project01.pdf`.
+- Nội dung mô tả đồ án chi tiết được viết trong file `122-CSDLNC-DA#1.pdf`.
 - Giải thích chi tiết về chương trình, **các hàm heuristics** được viết trong file `/Report/Report.pdf`.
 - Phần source code được để trong file `/Source`.
 
